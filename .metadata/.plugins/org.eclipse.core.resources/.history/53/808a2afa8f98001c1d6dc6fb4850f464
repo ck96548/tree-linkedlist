@@ -1,0 +1,29 @@
+package hashMap;
+
+public class SubstringPalindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = "ababa";
+		
+		subStringPalindrome(str);
+
+	}
+
+	private static void subStringPalindrome(String str) {
+		for(int i = 0 ; i < str.length();i++) {
+			
+			for (int j = i; j <= str.length(); j++) {
+				 
+				for (int j2 = 0; j2 <= i; j2++) {
+					
+					System.out.println(str.substring(i,j));
+					
+				}
+			}
+		}
+		
+	}
+
+}
